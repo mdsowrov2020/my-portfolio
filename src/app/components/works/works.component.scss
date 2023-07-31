@@ -1,0 +1,20 @@
+.work-card {
+  @apply p-4 rounded-2xl  bg-[#3c3c3c];
+  .work-img {
+    @apply h-56 w-full rounded-2xl;
+    &__img {
+      @apply h-full bg-cover bg-center w-full rounded-2xl;
+    }
+  }
+  .work-details {
+    @apply mt-4 flex justify-between items-center;
+    &__info {
+      p {
+        @apply text-text_secondary;
+      }
+      h5 {
+        @apply text-text_primary text-xl pt-1;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<!-- sidebar.component.html -->
+
+<div
+  class="sidebar fixed top-0 right-0 h-full w-80 bg-white shadow transform-gpu origin-right transition-transform"
+  [class.scale-x-100]="isOpen"
+  [class.scale-x-0]="!isOpen"
+  [style.zIndex]="isOpen ? '10' : '-1'"
+>
+  <div class="content p-4">
+    <!-- Your sidebar content goes here -->
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Skills</li>
+    </ul>
+  </div>
+</div>
+<div
+  class="backdrop fixed top-0 right-0 h-full w-full bg-black bg-opacity-50 transition-opacity"
+  [class.opacity-100]="isOpen"
+  [class.opacity-0]="!isOpen"
+  [style.zIndex]="isOpen ? '5' : '-1'"
+  (click)="toggleSidebar(false)"
+></div>

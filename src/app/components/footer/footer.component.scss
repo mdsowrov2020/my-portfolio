@@ -1,0 +1,10 @@
+/* Add custom styles for the initial border-radius */
+.footer {
+  @apply relative overflow-hidden;
+
+  border-radius: 100%; /* Initial border-radius value (adjust as needed) */
+}
+
+.footer-content {
+  @apply absolute inset-0 flex items-center justify-center;
+}
