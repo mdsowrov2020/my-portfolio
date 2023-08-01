@@ -15,6 +15,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CopyToClipboardDirective } from './shared/copy-to-clipboard.directive';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { CustomScrollbarComponent } from './components/custom-scrollbar/custom-scrollbar.component';
+import { StickyHeaderDirective } from './shared/sticky-header.directive';
+import { StackWorksComponent } from './components/stack-works/stack-works.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { CustomScrollbarComponent } from './components/custom-scrollbar/custom-s
     CopyToClipboardDirective,
     WelcomeComponent,
     CustomScrollbarComponent,
+    StickyHeaderDirective,
+    StackWorksComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

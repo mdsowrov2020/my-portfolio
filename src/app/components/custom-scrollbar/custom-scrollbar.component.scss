@@ -10,11 +10,12 @@
 
 .custom-scrollbar-progress {
   width: 100%;
-  background: linear-gradient(
-    to bottom,
-    #ff0000,
-    #00ff00
-  ); /* Add your desired gradient colors */
+  // background: linear-gradient(
+  //   to bottom,
+  //   #ff0000,
+  //   #00ff00
+  // );
+  @apply bg-gradient-to-r bg-gradient-to-br from-red-600 via-pink-500 to-purple-500;
   transition: height 0.1s; /* Adjust the transition duration as needed */
   border-radius: 8px;
 }
