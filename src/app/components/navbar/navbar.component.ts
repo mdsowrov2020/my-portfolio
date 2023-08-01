@@ -9,6 +9,7 @@ import { SidebarService } from 'src/app/shared/sidebar.service';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  logo: string = '<MdSowrov/>';
   constructor(private sidebarService: SidebarService) {}
 
   onHamburgerClick() {

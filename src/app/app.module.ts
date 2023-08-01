@@ -14,6 +14,7 @@ import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CopyToClipboardDirective } from './shared/copy-to-clipboard.directive';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { CustomScrollbarComponent } from './components/custom-scrollbar/custom-scrollbar.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     FooterComponent,
     CopyToClipboardDirective,
     WelcomeComponent,
+    CustomScrollbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

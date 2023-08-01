@@ -9,6 +9,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif !important;
   overflow-x: hidden;

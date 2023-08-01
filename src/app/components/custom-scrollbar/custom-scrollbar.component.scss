@@ -1,0 +1,20 @@
+.custom-scrollbar-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 8px; /* Change this as needed */
+  background-color: #3c3c3c; /* Change the scrollbar background color */
+  z-index: 9999;
+}
+
+.custom-scrollbar-progress {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #ff0000,
+    #00ff00
+  ); /* Add your desired gradient colors */
+  transition: height 0.1s; /* Adjust the transition duration as needed */
+  border-radius: 8px;
+}
