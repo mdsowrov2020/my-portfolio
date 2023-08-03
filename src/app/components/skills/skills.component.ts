@@ -1,4 +1,10 @@
-import { Component, ElementRef, AfterViewInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  AfterViewInit,
+  HostListener,
+  OnInit,
+} from '@angular/core';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger'; // Import the ScrollTrigger plugin
 
@@ -7,16 +13,20 @@ import ScrollTrigger from 'gsap/ScrollTrigger'; // Import the ScrollTrigger plug
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
 })
-export class SkillsComponent implements AfterViewInit {
+export class SkillsComponent implements OnInit, AfterViewInit {
   private skillCards: HTMLElement[] = [];
 
   constructor(private elementRef: ElementRef) {}
+
+  ngOnInit(): void {}
 
   ngAfterViewInit() {
     this.skillCards = Array.from(
       this.elementRef.nativeElement.querySelectorAll('.skill')
     );
     this.setupScrollTrigger();
+    gsap.registerPlugin(ScrollTrigger);
+    // this.initParallax();
   }
 
   private setupScrollTrigger() {

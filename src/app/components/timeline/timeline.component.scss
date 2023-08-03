@@ -1,111 +1,111 @@
-.timeline-section {
-  width: 100%;
-  /* background-color: crimson ; */
-}
+// .timeline-section {
+//   width: 100%;
+//   /* background-color: crimson ; */
+// }
 
-.timeline-me {
-  //   height: 100%;
-  z-index: 1;
-  //   width: 100%;
-  position: relative;
-  clear: both;
-}
+// .timeline-me {
+//   //   height: 100%;
+//   z-index: 1;
+//   //   width: 100%;
+//   position: relative;
+//   clear: both;
+// }
 
-.timeline-me::before {
-  position: absolute;
-  content: "";
-  height: 96%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  background-color: #9b9b9b;
-}
+// .timeline-me::before {
+//   position: absolute;
+//   content: "";
+//   height: 96%;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 2px;
+//   background-color: #9b9b9b;
+// }
 
-.timeline-me ul li {
-  display: block;
-  margin-bottom: 40px;
-  width: 50%;
-  position: relative;
-}
+// .timeline-me ul li {
+//   display: block;
+//   margin-bottom: 40px;
+//   width: 50%;
+//   position: relative;
+// }
 
-.timeline-me ul li:nth-child(odd) {
-  float: left;
-  clear: right;
-  transform: translateX(-45px);
-}
+// .timeline-me ul li:nth-child(odd) {
+//   float: left;
+//   clear: right;
+//   transform: translateX(-45px);
+// }
 
-.timeline-me ul li:nth-child(even) {
-  float: right;
-  clear: left;
-  transform: translateX(45px);
-}
+// .timeline-me ul li:nth-child(even) {
+//   float: right;
+//   clear: left;
+//   transform: translateX(45px);
+// }
 
-.timeline-me ul li .timeline-me__card {
-  padding: 30px;
-  background-color: #3c3c3c;
-}
-.timeline-me ul li:nth-child(odd) .timeline-me__card {
-  text-align: right;
-  padding-left: 20px;
-}
+// .timeline-me ul li .timeline-me__card {
+//   padding: 30px;
+//   background-color: #3c3c3c;
+// }
+// .timeline-me ul li:nth-child(odd) .timeline-me__card {
+//   text-align: right;
+//   padding-left: 20px;
+// }
 
-.timeline-me ul li:nth-child(even) .timeline-me__card {
-  text-align: left;
-  padding-right: 20px;
-}
-.timeline-me__card-icon {
-  height: 80px;
-  width: 80px;
-  border-radius: 100vmax;
-  margin-right: 0;
-}
+// .timeline-me ul li:nth-child(even) .timeline-me__card {
+//   text-align: left;
+//   padding-right: 20px;
+// }
+// .timeline-me__card-icon {
+//   height: 80px;
+//   width: 80px;
+//   border-radius: 100vmax;
+//   margin-right: 0;
+// }
 
-.timeline-me ul li:nth-child(even) .timeline-me__card .timeline-me__card-icon {
-  margin-left: 0;
-}
+// .timeline-me ul li:nth-child(even) .timeline-me__card .timeline-me__card-icon {
+//   margin-left: 0;
+// }
 
-.timeline-me ul li::after {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  /* border: 2px solid #9b9b9b; */
-  border-radius: 50%;
-  top: 0;
-  background-color: #9b9b9b;
-  font-size: x-large;
-  text-align: center;
-  color: var(--text-primary);
-}
+// .timeline-me ul li::after {
+//   position: absolute;
+//   content: "";
+//   height: 20px;
+//   width: 20px;
+//   /* border: 2px solid #9b9b9b; */
+//   border-radius: 50%;
+//   top: 0;
+//   background-color: #9b9b9b;
+//   font-size: x-large;
+//   text-align: center;
+//   color: var(--text-primary);
+// }
 
-.timeline-me ul li:nth-child(odd)::after {
-  transform: translate(50%, -50%);
+// .timeline-me ul li:nth-child(odd)::after {
+//   transform: translate(50%, -50%);
 
-  right: -45px;
-}
+//   right: -45px;
+// }
 
-.timeline-me ul li:nth-child(even)::after {
-  transform: translate(-50%, -50%);
+// .timeline-me ul li:nth-child(even)::after {
+//   transform: translate(-50%, -50%);
 
-  left: -45px;
-}
+//   left: -45px;
+// }
 
-.timeline-me__card-content p {
-  font-size: 14px;
-}
+// .timeline-me__card-content p {
+//   font-size: 14px;
+// }
 
-.timeline-me
-  ul
-  li:nth-child(odd)
-  .timeline-me__card
-  .timeline-me__card-content
-  p {
-  padding-left: 50px;
-}
+// .timeline-me
+//   ul
+//   li:nth-child(odd)
+//   .timeline-me__card
+//   .timeline-me__card-content
+//   p {
+//   padding-left: 50px;
+// }
 
-.timeline-me__card-content h4 {
-  text-transform: uppercase;
-  font-size: x-large;
-  color: #9b9b9b;
-  font-weight: 700;
-}
+// .timeline-me__card-content h4 {
+//   text-transform: uppercase;
+//   font-size: x-large;
+//   color: #9b9b9b;
+//   font-weight: 700;
+// }

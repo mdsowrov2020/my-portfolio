@@ -18,6 +18,9 @@ import { CustomScrollbarComponent } from './components/custom-scrollbar/custom-s
 import { StickyHeaderDirective } from './shared/sticky-header.directive';
 import { StackWorksComponent } from './components/stack-works/stack-works.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { LayoutComponent } from './components/Layout/layout/layout.component';
+import { QouteComponent } from './components/qoute/qoute.component';
+import { SectionTitleComponent } from './components/section-title/section-title.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import { ContactComponent } from './components/contact/contact.component';
     StickyHeaderDirective,
     StackWorksComponent,
     ContactComponent,
+    LayoutComponent,
+    QouteComponent,
+    SectionTitleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

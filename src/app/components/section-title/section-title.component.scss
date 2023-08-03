@@ -1,0 +1,7 @@
+.section-title {
+  @apply relative inline-block overflow-hidden z-[2] left-[50%] translate-x-[-50%];
+}
+
+.slider {
+  @apply absolute top-0 left-0 w-0 h-full bg-[#fff] z-[1] translate-x-[0];
+}

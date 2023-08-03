@@ -9,7 +9,9 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 })
 export class WorksComponent implements OnInit {
   constructor(private elementRef: ElementRef) {}
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.animateSection();
+  }
   ngAfterViewInit(): void {
     this.initScrollTriggerAnimation();
   }
@@ -35,5 +37,25 @@ export class WorksComponent implements OnInit {
       { opacity: 0, y: 50 },
       0.5 // Stagger delay of 0.2 seconds between each element
     );
+  }
+
+  animateSection() {
+    // GSAP ScrollTrigger animation for the border-radius
+    gsap.registerPlugin(ScrollTrigger);
+
+    const footerElement =
+      this.elementRef.nativeElement.querySelector('.work-section');
+
+    gsap.to(footerElement, {
+      borderRadius: '0%', // Change border-radius to 0% when reaching the bottom
+      duration: 2,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: footerElement,
+        start: 'top bottom', // Trigger the animation when the footer top reaches the viewport bottom
+        end: 'bottom bottom', // And end when the footer bottom reaches the viewport bottom
+        scrub: true,
+      },
+    });
   }
 }

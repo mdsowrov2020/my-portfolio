@@ -19,6 +19,9 @@ module.exports = {
         serif: ["Poppins", "serif"],
         roboto: ["Roboto", "sans-serif"],
       },
+      container: {
+        center: true,
+      },
     },
   },
   plugins: [],
